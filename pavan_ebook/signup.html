@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - E-book Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            background: linear-gradient(to right, #dfe9f3, #fefefe);
+        }
+        .signup-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 350px;
+        }
+        h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .input-group {
+            margin: 10px 0;
+        }
+        .input-group input {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+
+        <form action="signup.php" method="post">
+            <div class="input-group">
+                <input type="text" name="full_name" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="tel" name="phone" placeholder="Phone Number" maxlength="10" pattern="[0-9]{10}" required>
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+        <a href="login_user.html" class="signup-link">Already have an account? Login</a>
+    </div>
+
+</body>
+</html>

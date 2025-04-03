@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-book Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end; /* Aligns content to the right */
+            height: 100vh;
+            background: url('background.jpg') no-repeat center center/cover;
+            padding-right: 10%;
+        }
+
+        .container {
+            text-align: center;
+            width: 350px;
+            background: linear-gradient(135deg, #ffffff, #dff3ff); /* Gradient color */
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Logo Icon */
+        .logo {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 26px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .login-options {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-direction: column;
+        }
+
+        .login-card {
+            width: 90%;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: 2px solid transparent;
+        }
+
+        .login-card:hover {
+            transform: scale(1.05);
+            background: #f1f1f1;
+            border-color: #007bff;
+        }
+
+        .login-card img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .login-link {
+            text-decoration: none;
+        }
+
+        .login-card span {
+            color: #007bff;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Icon added at the top -->
+        <img src="homelogo.jpg" alt="E-book Logo" class="logo">
+
+        <h1>Welcome to the E-book Management System</h1>
+        
+        <div class="login-options">
+            <!-- User Login -->
+            <a href="login_user.html" class="login-link">
+                <div class="login-card">
+                    <img src="user_icon.png" alt="User Icon">
+                    <span>User Login</span>
+                </div>
+            </a>
+
+            <!-- Admin Login -->
+            <a href="login_admin.html" class="login-link">
+                <div class="login-card">
+                    <img src="admin_icon.png" alt="Admin Icon">
+                    <span>Admin Login</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
